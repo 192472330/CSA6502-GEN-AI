@@ -1,0 +1,11 @@
+from sklearn.metrics.pairwise import cosine_similarity
+
+# Define two text vectors
+vector1 = [[1, 2, 3]]
+vector2 = [[2, 4, 6]]
+
+# Calculate cosine similarity
+similarity = cosine_similarity(vector1, vector2)
+
+print("Cosine Similarity:")
+print(similarity)
