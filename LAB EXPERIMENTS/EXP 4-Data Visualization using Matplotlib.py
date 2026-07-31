@@ -1,0 +1,28 @@
+import matplotlib.pyplot as plt
+
+# Sales data for five months
+months = ['Jan', 'Feb', 'Mar', 'Apr', 'May']
+sales = [10000, 15000, 12000, 18000, 20000]
+
+# Create a figure with 1 row and 2 columns
+plt.figure(figsize=(10, 4))
+
+# Bar Chart
+plt.subplot(1, 2, 1)
+plt.bar(months, sales)
+plt.title("Bar Chart")
+plt.xlabel("Months")
+plt.ylabel("Sales")
+
+# Line Graph
+plt.subplot(1, 2, 2)
+plt.plot(months, sales, marker='o')
+plt.title("Line Graph")
+plt.xlabel("Months")
+plt.ylabel("Sales")
+
+# Adjust layout
+plt.tight_layout()
+
+# Display both graphs
+plt.show()
